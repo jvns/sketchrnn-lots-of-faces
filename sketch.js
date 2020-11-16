@@ -92,6 +92,8 @@ async function setup() {
         w= Math.max(w, h)
         h= Math.max(w, h)
         console.log(w, h)
+        top = Math.max(0, top);
+        left = Math.max(0, left);
         w = Math.min(w, width - left)
         h = Math.min(h, height - top)
         console.log(w, h)
