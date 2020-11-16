@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="UTF-8" >
+    <title>SketchRNN</title>
+    <script src="https://unpkg.com/ml5@0.6.0/dist/ml5.min.js" type="text/javascript"></script>
+  </head>
+
+<style>
+#canvas {
+    border: 8px solid black;
+}
+
+#images img {
+    border: 2px solid black;
+    margin: .5em;
+    padding: .5em;
+}
+</style>
+
+<body>
+    <h1 style="width: 100%; text-align: center;">sketchrnn sketching lots of faces</h1>
+    <div style="display: flex; flex-direction: row;">
+        <div id="canvas">
+        </div>
+        <div style="overflow: scroll; max-height: 100vh;">
+            <h1 style="padding: 0 3em; text-align: center"> gallery </h1>
+            <div id="images" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+            </div>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
